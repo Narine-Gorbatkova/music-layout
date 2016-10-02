@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<nav class="navbar">
+					<div class="container-fluid">
+						<a class="navbar-brand logo" href="#">Audinami</a>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav menu">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Artists</a></li>
+								<li><a href="#">Albums</a></li>
+								<li><a href="#">Genres</a></li>
+								<li><a href="#" class="pink">Trending</a></li>
+							</ul>
+						</div>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="dropdown pull-right">
+							<div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<div class="ava pull-left">
+									<img src="images/ava_picture.png">
+								</div>
+								artofyourphobias
+								<i class="fa fa-angle-down"></i>
+							</div>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
+								<li><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a></li>
+								<li><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>Edit My Profile</a></li>
+								<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i>Favorites</a></li>
+								<li><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i>My Playlist</a></li>
+								<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Messages</a></li>
+								<li><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i>Notifications</a></li>
+								<li><a href="#"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>Upload New Files</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="profile profile_back row">
+				<div class="profile_header col-sx-12">
+					<div class="ava">
+						<img src="images/picture3.jpg">
+						<div class="ava_image text-center"><i class="fa fa-camera"></i>Upload Image</div>
+					</div>
+					<div class="user_info">
+						<div class="name">artofyourphobias<span><i class="fa fa-pencil"></i></span></div>
+						<div class="bg_image"><i class="fa fa-camera"></i>Upload Image</div>
+					</div>
+				</div>
+				<div class="profile_menu col-sx-12">
+					<ul class="list-inline">
+						<li><a href="#">Tracks</a></li>
+						<li><a href="#">My Playlist</a></li>
+						<li><a href="#">Favorites</a></li>
+						<li><a href="#">Dashboard</a></li>
+						<li><a href="#">Messages</a></li>
+						<li><a href="#">Notifications</a></li>
+						<li><a href="#">All Activity</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="notifications">
+				<div class="news_time_line">
+					<div class="menu">
+						<ul class="list-inline">
+							<li><a href="#">All</a></li>
+							<li><a href="#">Followers</a></li>
+							<li><a href="#">Comments</a></li>
+							<li><a href="#">Likes</a></li>
+							<li><a href="#">Downloads</a></li>
+							<li><a href="#">Shares</a></li>
+						</ul>
+						<hr/>
+					</div>
+
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="chart_item">
+								<div class="chart_header">
+									<ul class="nav nav-tabs">
+										<li class="active"><a data-type="week" data-toggle="tab">This week</a></li>
+										<li><a data-type="month" data-toggle="tab">This month</a></li>
+										<li><a data-type="year" data-toggle="tab">This year</a></li>
+									</ul>
+								</div>
+								<div class="chart_body">
+									<div id="chart">
+										
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="chart_item">
+								<div class="chart_header">Comparing Statistics</div>
+								<div class="chart_body">
+									<div class="row">
+										<div class="col-xs-6">
+											<p>74 new followers this month</p>
+											<div class="progress">
+												<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+													<span class="sr-only">100% Complete</span>
+												</div>
+											</div>
+											<p>37 new followers last month</p>
+											<div class="progress">
+												<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+													<span class="sr-only">100% Complete</span>
+												</div>
+											</div>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+										</div>
+										<div class="col-xs-offset-1 col-xs-5">
+											<div id="circleProgressBar"></div>
+											<p class="text-center">+50% from the<br> previous month</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<p>Current Progress</p>
+					<span>Checkout your latest followers</span>
+					<hr/>
+					<div class="item clearfix">
+						<div class="pull-left">
+							<div class="ava">
+								<img src="images/picture3.jpg">
+							</div>
+							<button class="btn btn_gray">View a profile</button>
+						</div>
+						<div class="middle_block">
+							<div class="name">
+								<a href="#">Jack Jillenhaal</a>
+								is following you
+							</div>
+							<span class="time pull-right hidden-xs">28 days ago</span>
+							<button class="btn btn_blue sm">Follow back</button>
+							<button class="btn btn_gray">Send a message</button>
+						</div>
+					</div>
+					<hr/>
+					<div class="item clearfix">
+						<div class="pull-left">
+							<div class="ava">
+								<img src="images/picture3.jpg">
+							</div>
+							<button class="btn btn_gray">View a profile</button>
+						</div>
+						<div class="middle_block">
+							<div class="name">
+								<a href="#">Jack Jillenhaal</a>
+								is following you
+							</div>
+							<span class="time pull-right hidden-xs">28 days ago</span>
+							<button class="btn btn_blue sm">Follow back</button>
+							<button class="btn btn_gray">Send a message</button>
+						</div>
+					</div>
+					<hr/>
+					<div class="item clearfix">
+						<div class="pull-left">
+							<div class="ava">
+								<img src="images/picture3.jpg">
+							</div>
+							<button class="btn btn_gray">View a profile</button>
+						</div>
+						<div class="middle_block">
+							<div class="name">
+								<a href="#">Jack Jillenhaal</a>
+								is following you
+							</div>
+							<span class="time pull-right hidden-xs">28 days ago</span>
+							<button class="btn btn_blue sm">Follow back</button>
+							<button class="btn btn_gray">Send a message</button>
+						</div>
+					</div>
+					<hr/>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom_line_blank"></div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="footer_logo">
+							<a class="logo" href="#">Audinami</a>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<ul class="list-inline menu text-center">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Artists</a></li>
+							<li><a href="#">Albums</a></li>
+							<li><a href="#">Genres</a></li>
+							<li><a href="#" class="pink">Trending</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3">
+						<ul class="list-inline menu text-right">
+							<li><a href="#">Sign Up</a></li>
+							<li><a href="#">Sign Up</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="text-center">
+					<h5>Follow us</h5>
+					<div class="icon_block">
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+					</div>
+					<div class="rights">Copyright <i class="fa fa-copyright"></i> 2016 Digital Chaos.<br> All Rights Reserved.</div>
+					<div class="bottom_menu">
+						<ul class="list-inline">
+							<li><a href="#">Copyright</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Legal Notice</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="http://momentjs.com/downloads/moment.min.js"></script>
+		<script src="js/jquery.jplayer.min.js"></script> 
+		<script src="js/jplayer.playlist.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/dropzone.js"></script>
+		<script src="js/site.js"></script>
+		<script src="js/progressbar.min.js"></script>
+
+
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript">
+			var currentPoints;
+			var points = { 
+				week: [
+					[new Date(2016, 6, 1), 3],
+					[new Date(2016, 6, 2), 6],
+					[new Date(2016, 6, 3), 4],
+					[new Date(2016, 6, 4), 5],
+					[new Date(2016, 6, 5), 8],
+					[new Date(2016, 6, 6), 6],
+					[new Date(2016, 6, 7), 9],
+					[new Date(2016, 6, 8), 12],
+					[new Date(2016, 6, 9), 15],
+					[new Date(2016, 6, 10), 10],
+					[new Date(2016, 6, 11), 16]
+				],
+				month: [
+					[new Date(2016, 6, 1), 7],
+					[new Date(2016, 6, 2), 8],
+					[new Date(2016, 6, 3), 3],
+					[new Date(2016, 6, 4), 6],
+					[new Date(2016, 6, 5), 1],
+					[new Date(2016, 6, 6), 4],
+					[new Date(2016, 6, 7), 7],
+					[new Date(2016, 6, 8), 1],
+					[new Date(2016, 6, 9), 10],
+					[new Date(2016, 6, 10), 10],
+					[new Date(2016, 6, 11), 16]
+				],
+				year: [
+					[new Date(2016, 6, 1), 1],
+					[new Date(2016, 6, 2), 3],
+					[new Date(2016, 6, 3), 8],
+					[new Date(2016, 6, 4), 10],
+					[new Date(2016, 6, 5), 8],
+					[new Date(2016, 6, 6), 6],
+					[new Date(2016, 6, 7), 3],
+					[new Date(2016, 6, 8), 1],
+					[new Date(2016, 6, 9), 6],
+					[new Date(2016, 6, 10), 1],
+					[new Date(2016, 6, 11), 16]
+				]
+			};
+			google.charts.load('current', {packages:['corechart', 'line']});
+			google.charts.setOnLoadCallback(function () {
+				drawChart(points.week);
+			});
+
+			function generateTooltips (pointValues) {
+				if (pointValues[0].length < 3) {
+					for (var i = 0, len = pointValues.length; i < len; i++) {
+						var date = moment(pointValues[i][0]).format('DD of MMMM YYYY');
+						pointValues[i].push(pointValues[i][1] + ' new followers\n' + date);
+					}
+				}
+
+				return pointValues;
+			}
+			
+			function drawChart (pointValues) {
+				var pointValues = pointValues || currentPoints || [];
+				var dataTable = new google.visualization.DataTable();
+
+				if (!pointValues.length) {
+					return false;
+				}
+
+				pointValues = generateTooltips(pointValues);
+				currentPoints = pointValues;
+  				
+  				dataTable.addColumn('date', 'Date');
+  				dataTable.addColumn('number', 'Count');
+  				dataTable.addColumn({ type: 'string', role: 'tooltip'});
+  				dataTable.addRows(pointValues);
+
+				var options = {
+					legend: 'none',
+					colors: ['#fff'],
+					pointSize: 10,
+					pointShape: { type: 'point', rotation: 180 },
+					backgroundColor: '#92ced5',
+					chartArea: { width: '90%' },
+					width: '100%',
+					hAxis: {
+						gridlines: { color: '#b8dfe4', count: pointValues.length - 1 },
+						textStyle: { color: '#fff'},
+						format: 'MM/dd'
+					},
+					vAxis: { 
+						gridlines: { color: '#b8dfe4' },
+						baselineColor: '#92ced5',
+						textStyle: { color: '#92ced5'}
+
+					},
+					tooltip: { 
+						isHtml: true,
+						textStyle: {color: '#fff'}
+					}
+				};
+
+				var chart = new google.visualization.LineChart(document.getElementById('chart'));
+				chart.draw(dataTable, options);
+			}
+
+			var bar = new ProgressBar.Circle('#circleProgressBar', {
+				color: '#fff',
+				strokeWidth: 4,
+				trailWidth: 10,
+				trailColor: '#b8dfe4',
+				easing: 'easeInOut',
+				duration: 1400,
+				text: {
+					autoStyleContainer: false,
+					fontSize: '30px'
+				},
+				from: { color: '#fff', width: 1 },
+				to: { color: '#fff', width: 4 },
+				// Set default step function for all animate calls
+				step: function(state, circle) {
+					circle.path.setAttribute('stroke', state.color);
+					circle.path.setAttribute('stroke-width', state.width);
+
+					var value = Math.round(circle.value() * 100);
+					circle.setText(value + '%<br><small>Progress</small>');
+				}
+			});
+
+			bar.animate(1.0);  
+
+			$(document).ready(function () {
+				$(document).on('shown.bs.tab', '.chart_header a[data-toggle="tab"]', function (e) {
+					var $tab = $(this);
+					var type = $tab.data('type');
+					var data;
+
+					if (!points[type]) {
+						return false;
+					}
+
+					drawChart(points[type]);
+				});
+
+				$(window).resize(function () {
+					drawChart();					
+				});
+			});
+		</script>
+	</body>
+</html>

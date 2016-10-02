@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<nav class="navbar">
+					<div class="container-fluid">
+						<a class="navbar-brand logo" href="#">Audinami</a>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav menu">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Artists</a></li>
+								<li><a href="#">Albums</a></li>
+								<li><a href="#">Genres</a></li>
+								<li><a href="#" class="pink">Trending</a></li>
+							</ul>
+						</div>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="sign_group">
+							<button class="btn btn_white">Sign in</button>
+							<button class="btn btn_white">Sign up</button>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		
+		<div class="container">
+			<div class="upload text-center">
+				<h5>Upload your sound to Audinami</h5>
+				<div class="upload_block">
+					<h6>Drag your files here or browse to upload</h6>
+					<div style="overflow-x: auto">
+						<div class="dropzone_wrapper">
+							<div class="dropzone_table_title row hidden">
+								<div class="col-xs-5 col-xs-offset-1 text-left dz-filename">Name of the files</div>
+								<div class="col-xs-2">Size</div>
+								<div class="col-xs-1">Status</div>
+								<div class="col-xs-2">Delete</div>
+							</div>
+							<div class="dropzone_table"></div>
+						</div>
+					</div>
+					<br>
+					<br>
+					<br>
+					<button class="btn btn_lg btn_lg_padding browse">Browse your file<wbr>
+					 to upload</button>
+					 <button class="btn btn_lg btn_lg_padding start_upload">Upload</button>
+					<p>You can upload AIFF, WAVE (WAV), FLAC, ALAC, OGG, MP2,<br> MP3, AAC, AMR and WMAfiles. The maximum file size is 5GB.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom_line_blank"></div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="footer_logo">
+							<a class="logo" href="#">Audinami</a>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<ul class="list-inline menu text-center">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Artists</a></li>
+							<li><a href="#">Albums</a></li>
+							<li><a href="#">Genres</a></li>
+							<li><a href="#" class="pink">Trending</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3">
+						<ul class="list-inline menu text-right">
+							<li><a href="#">Sign Up</a></li>
+							<li><a href="#">Sign Up</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="text-center">
+					<h5>Follow us</h5>
+					<div class="icon_block">
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+					</div>
+					<div class="rights">Copyright <i class="fa fa-copyright"></i> 2016 Digital Chaos.<br> All Rights Reserved.</div>
+					<div class="bottom_menu">
+						<ul class="list-inline">
+							<li><a href="#">Copyright</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Legal Notice</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content song_info">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        				<h4 class="modal-title text-center" id="myModalLabel">Song Inrformation</h4>
+					</div>
+		      		<div class="modal-body">
+		      			<div class="form_block">
+		      				<div class="form-group error">
+								<input type="text" class="form-control" placeholder="Title*">
+		      					<p class="error">&nbsp;</p>
+							</div>
+							<div class="form-group success">
+								<input type="text" class="form-control" placeholder="Artist*">
+								<p class="error">&nbsp;</p>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Album">
+								<p class="error">&nbsp;</p>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Genre">
+								<p class="error">&nbsp;</p>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="#tags">
+								<p class="error">&nbsp;</p>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" placeholder="Description"></textarea>
+								<p class="error">&nbsp;</p>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Release Date">
+								<p class="error">&nbsp;</p>
+							</div>
+		      			</div>
+		      		</div>
+		      		<div class="modal-footer">
+						<a href="#" class="btn-link" data-dismiss="modal">Cancel</a>
+						<button type="button" class="btn">Save</button>
+					</div>
+		 	   	</div>
+			</div>
+		</div>
+		
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.jplayer.min.js"></script> 
+		<script src="js/jplayer.playlist.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/dropzone.js"></script>
+		<script src="js/site.js"></script>
+
+		<div id="dropzone_element" class="hidden">
+			<div class="row dz-preview dz-file-preview">
+				<div class="col-xs-1"><i class="fa fa-music"></i></div>
+				<div class="col-xs-5 text-left dz-filename"><div class="ellipsis" data-dz-name></div></div>
+				<div class="col-xs-2 dz-size"><div class="ellipsis" data-dz-size></div></div>
+				<div class="col-xs-1 dz-progress">Uploaded</div>
+				<div class="col-xs-2"><a href="#" data-dz-remove>Delete</a></div>
+				<div class="col-xs-1" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i></div>
+			</div>
+		</div>
+
+	</body>
+</html>
