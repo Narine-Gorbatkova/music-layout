@@ -4,23 +4,23 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="/music-layout/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/music-layout/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/music-layout/css/style.css">
 	</head>
 	<body>
 		<header>
 			<div class="container">
 				<nav class="navbar">
 					<div class="container-fluid">
-						<a class="navbar-brand logo" href="#">Audinami</a>
+						<a class="navbar-brand logo" href="/music-layout">Audinami</a>
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav menu">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Artists</a></li>
-								<li><a href="#">Albums</a></li>
-								<li><a href="#">Genres</a></li>
-								<li><a href="#" class="pink">Trending</a></li>
+								<li><a href="/music-layout">Home</a></li>
+								<li><a href="/music-layout/artists_page">Artists</a></li>
+								<li><a href="/music-layout/albums_page">Albums</a></li>
+								<li><a href="/music-layout/genures_page">Genres</a></li>
+								<li><a href="/music-layout/trending">Trending</a></li>
 							</ul>
 						</div>
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -37,29 +37,76 @@
 				</nav>
 			</div>
 		</header>
-		
-		<div class="container">
-			<div class="upload text-center">
+
+		<div class="upload text-center">
+			<div class="container">
 				<h5>Upload your sound to Audinami</h5>
-				<div class="upload_block">
+				<div class="upload_block upload_block_lg">
 					<h6>Drag your files here or browse to upload</h6>
-					<div style="overflow-x: auto">
-						<div class="dropzone_wrapper">
-							<div class="dropzone_table_title row hidden">
-								<div class="col-xs-5 col-xs-offset-1 text-left dz-filename">Name of the files</div>
-								<div class="col-xs-2">Size</div>
-								<div class="col-xs-1">Status</div>
-								<div class="col-xs-2">Delete</div>
-							</div>
-							<div class="dropzone_table"></div>
-						</div>
-					</div>
-					<br>
-					<br>
-					<br>
-					<button class="btn btn_lg btn_lg_padding browse">Browse your file<wbr>
-					 to upload</button>
-					 <button class="btn btn_lg btn_lg_padding start_upload">Upload</button>
+
+					<table class="table">
+  						<thead>
+  							<tr>
+  								<th></th>
+  								<th class="text-left">Name of the files</th>
+  								<th class="text-center">Type</th>
+  								<th class="text-center">Size</th>
+  								<th class="text-center">Status</th>
+  								<th class="text-center">Delete</th>
+  								<th></th>
+  							</tr>
+  						</thead>
+  						<tbody>
+  							<tr class="turquoise_back">
+  								<td class="text-right dark_green"><i class="fa fa-music"></i></td>
+  								<td class="text-left">Track 1</td>
+  								<td class="text-center">Wave</td>
+  								<td class="text-center">25MB</td>
+  								<td class="text-center">Uploaded</td>
+  								<td class="text-center">Delete</td>
+  								<td class="dark_green" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i></td>
+  							</tr>
+  							<tr class="dark_green_back">
+  								<td class="text-right turquoise"><i class="fa fa-music"></i></td>
+  								<td class="text-left">The Sudness Will Never End (Feat. Sam Carter of Architects)</td>
+  								<td class="text-center">MP3</td>
+  								<td class="text-center">25MB</td>
+  								<td class="text-center">89%</td>
+  								<td class="text-center">Delete</td>
+  								<td class="turquoise" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i></td>
+  							</tr>
+  							<tr class="turquoise_back">
+  								<td class="text-right dark_green"><i class="fa fa-music"></i></td>
+  								<td class="text-left">Untitled</td>
+  								<td class="text-center">MP3</td>
+  								<td class="text-center">25MB</td>
+  								<td class="text-center">66%</td>
+  								<td class="text-center">Delete</td>
+  								<td class="dark_green" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i></td>
+  							</tr>
+  							<tr class="dark_green_back">
+  								<td class="text-right turquoise"><i class="fa fa-music"></i></td>
+  								<td class="text-left">Track 487</td>
+  								<td class="text-center">MP3</td>
+  								<td class="text-center">25MB</td>
+  								<td class="text-center">Uploaded</td>
+  								<td class="text-center">Delete</td>
+  								<td class="turquoise" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i></td>
+  							</tr>
+  							<tr class="turquoise_back">
+  								<td class="text-right dark_green"><i class="fa fa-music"></i></td>
+  								<td class="text-left">The Sudness Will Never End and A Bit More Information Just To Make<br> This Spot Really Long (Feat. Sam Carter of Architects)</td>
+  								<td class="text-center">MP3</td>
+  								<td class="text-center">25MB</td>
+  								<td class="text-center">Uploaded</td>
+  								<td class="text-center">Delete</td>
+  								<td class="dark_green" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i></td>
+  							</tr>
+  						</tbody>
+					</table>
+
+					<button class="btn">Browse your file to upload</button>
+					<button class="btn">Upload</button>
 					<p>You can upload AIFF, WAVE (WAV), FLAC, ALAC, OGG, MP2,<br> MP3, AAC, AMR and WMAfiles. The maximum file size is 5GB.</p>
 				</div>
 			</div>
@@ -71,16 +118,16 @@
 				<div class="row">
 					<div class="col-sm-3">
 						<div class="footer_logo">
-							<a class="logo" href="#">Audinami</a>
+							<a class="logo" href="/music-layout">Audinami</a>
 						</div>
 					</div>
 					<div class="col-sm-6">
 						<ul class="list-inline menu text-center">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Artists</a></li>
-							<li><a href="#">Albums</a></li>
-							<li><a href="#">Genres</a></li>
-							<li><a href="#" class="pink">Trending</a></li>
+							<li><a href="/music-layout">Home</a></li>
+							<li><a href="/music-layout/artists_page">Artists</a></li>
+							<li><a href="/music-layout/albums_page">Albums</a></li>
+							<li><a href="/music-layout/genures_page">Genres</a></li>
+							<li><a href="/music-layout/trending">Trending</a></li>
 						</ul>
 					</div>
 					<div class="col-sm-3">
@@ -138,16 +185,17 @@
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="#tags">
 								<p class="error">&nbsp;</p>
-							</div>
-							<div class="form-group">
+							</div><div class="form-group">
 								<textarea class="form-control" placeholder="Description"></textarea>
 								<p class="error">&nbsp;</p>
+
 							</div>
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="Release Date">
 								<p class="error">&nbsp;</p>
 							</div>
 		      			</div>
+
 		      		</div>
 		      		<div class="modal-footer">
 						<a href="#" class="btn-link" data-dismiss="modal">Cancel</a>
@@ -156,26 +204,9 @@
 		 	   	</div>
 			</div>
 		</div>
-		
+
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.jplayer.min.js"></script> 
-		<script src="js/jplayer.playlist.js"></script>
-		<script src="js/jquery.jscrollpane.min.js"></script>
-		<script src="js/jquery.mousewheel.js"></script>
-		<script src="js/dropzone.js"></script>
-		<script src="js/site.js"></script>
-
-		<div id="dropzone_element" class="hidden">
-			<div class="row dz-preview dz-file-preview">
-				<div class="col-xs-1"><i class="fa fa-music"></i></div>
-				<div class="col-xs-5 text-left dz-filename"><div class="ellipsis" data-dz-name></div></div>
-				<div class="col-xs-2 dz-size"><div class="ellipsis" data-dz-size></div></div>
-				<div class="col-xs-1 dz-progress">Uploaded</div>
-				<div class="col-xs-2"><a href="#" data-dz-remove>Delete</a></div>
-				<div class="col-xs-1" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i></div>
-			</div>
-		</div>
 
 	</body>
 </html>
